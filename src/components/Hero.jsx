@@ -5,8 +5,9 @@ export default function Hero() {
   return (
     <section id="home" className="relative overflow-hidden">
       <div className="relative h-[80vh] min-h-[560px] w-full">
-        <Spline scene="https://prod.spline.design/4cHQr84zOGAHOehh/scene.splinecode" style={{ width: '100%', height: '100%' }} />
-        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(3,30,46,0.25),transparent_60%)]" />
+        <Spline scene="https://prod.spline.design/N8g2VNcx8Rycz93J/scene.splinecode" style={{ width: '100%', height: '100%' }} />
+        {/* Non-blocking visual overlays for depth; keep interactive scene clickable */}
+        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(14,24,35,0.35),transparent_60%)]" />
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-white via-transparent to-transparent" />
       </div>
 
