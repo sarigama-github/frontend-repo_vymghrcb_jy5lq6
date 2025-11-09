@@ -1,27 +1,16 @@
-import { Rocket, Sparkles, Cog, Video } from 'lucide-react';
+import { Rocket, Bot, PenTool, Palette, Video, Zap, Settings, Megaphone, Cloud } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const services = [
-  {
-    icon: Rocket,
-    title: 'AI-Ready Websites',
-    desc: 'Fast, accessible, and thoughtfully animated frontends that scale.',
-  },
-  {
-    icon: Sparkles,
-    title: 'Brand & Identity',
-    desc: 'Logos, palettes, and systems that communicate your ethos.',
-  },
-  {
-    icon: Video,
-    title: 'Motion & Content',
-    desc: 'Micro-interactions, promos, and content carousels that convert.',
-  },
-  {
-    icon: Cog,
-    title: 'Automation',
-    desc: 'Integrations and workflows to connect apps and ship faster.',
-  },
+  { icon: Rocket, title: 'Web & App Development', desc: 'High‑performance, accessible, and animated apps built with modern stacks.' },
+  { icon: PenTool, title: 'SaaS Product Design', desc: 'From UX flows to production‑ready UI systems with motion principles.' },
+  { icon: Bot, title: 'AI Chatbot & Automation Systems', desc: 'Custom GPTs, support bots, and workflow automation for ops.' },
+  { icon: Palette, title: 'UI/UX Design', desc: 'Design libraries, prototyping, and usability‑driven interfaces.' },
+  { icon: PenTool, title: 'Branding & Logo Design', desc: 'Distinct identities and guidelines that scale across platforms.' },
+  { icon: Megaphone, title: 'Poster & Carousel Creation', desc: 'Event, brand, and social campaigns with conversion‑led visuals.' },
+  { icon: Video, title: 'Video Editing & Motion Graphics', desc: 'Cinematic reels, promos, and product walkthroughs.' },
+  { icon: Zap, title: 'Digital Marketing Automation', desc: 'Lead capture, drip flows, and analytics‑powered funnels.' },
+  { icon: Cloud, title: 'Tech Consulting (Cloud, API, AI)', desc: 'Architecture, integrations, and best‑practice guidance.' },
 ];
 
 export default function Services() {
@@ -46,17 +35,17 @@ export default function Services() {
       <div className="relative mx-auto max-w-7xl px-6">
         <div className="text-center">
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-cyan-50">Services</h2>
-          <p className="mt-2 text-cyan-200/80 max-w-2xl mx-auto">A focused set of capabilities designed to take ideas from concept to production.</p>
+          <p className="mt-2 text-cyan-200/80 max-w-2xl mx-auto">Tell us what you need — these are the core ways we can help you ship and scale.</p>
         </div>
 
-        <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map(({ icon: Icon, title, desc }, idx) => (
             <motion.div
               key={title}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.25 }}
-              transition={{ duration: 0.5, delay: idx * 0.05 }}
+              transition={{ duration: 0.5, delay: idx * 0.04 }}
               whileHover={{ y: -6, rotateX: 2, rotateY: -2 }}
               className="[transform-style:preserve-3d] rounded-2xl border border-cyan-500/20 bg-slate-900/40 p-6 shadow-sm hover:shadow-md transition-all"
             >

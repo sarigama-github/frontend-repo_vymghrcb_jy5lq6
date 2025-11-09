@@ -14,7 +14,7 @@ export default function Hero() {
       {/* Full-bleed, stable height container to prevent collapse */}
       <div className="relative w-full h-[80vh] md:h-screen min-h-[620px]">
         <Spline
-          scene="https://prod.spline.design/7m4PRZ7kg6K1jPfF/scene.splinecode"
+          scene="https://prod.spline.design/VJLoxp84lCdVfdZu/scene.splinecode"
           style={{ width: '100%', height: '100%' }}
         />
         {/* Non-blocking visual overlays for depth; keep interactive scene clickable */}
@@ -44,7 +44,7 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.1 }}
             className="mt-4 text-lg md:text-xl text-cyan-100/90"
           >
-            Cosmic-grade, intelligent experiences — crafted with motion, precision, and a luminous edge.
+            Tech-forward, interactive, and modern — AI-powered web, brand, and motion.
           </motion.p>
 
           <motion.div
@@ -53,11 +53,11 @@ export default function Hero() {
             transition={{ duration: 0.9, delay: 0.2 }}
             className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3"
           >
-            <a href="#services" className="inline-flex items-center justify-center rounded-full bg-[#00D3C4] text-slate-950 px-6 py-3 font-semibold hover:brightness-95 transition-colors shadow-[0_8px_40px_rgba(0,211,196,0.45)]">
-              Explore Services
+            <a href="#projects" className="inline-flex items-center justify-center rounded-full bg-[#00D3C4] text-slate-950 px-6 py-3 font-semibold hover:brightness-95 transition-colors shadow-[0_8px_40px_rgba(0,211,196,0.45)]">
+              View Projects
             </a>
-            <a href="#contact" className="inline-flex items-center justify-center rounded-full bg-transparent text-cyan-100 px-6 py-3 font-semibold border border-[#00D3C4]/60 hover:bg-[#00D3C4]/10 transition-colors">
-              Get in touch
+            <a href="#services" className="inline-flex items-center justify-center rounded-full bg-transparent text-cyan-100 px-6 py-3 font-semibold border border-[#00D3C4]/60 hover:bg-[#00D3C4]/10 transition-colors">
+              Our Services
             </a>
           </motion.div>
         </div>
