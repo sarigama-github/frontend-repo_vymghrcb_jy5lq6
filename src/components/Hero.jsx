@@ -14,7 +14,7 @@ export default function Hero() {
       {/* Full-bleed, stable height container to prevent collapse */}
       <div className="relative w-full h-[80vh] md:h-screen min-h-[620px]">
         <Spline
-          scene="https://prod.spline.design/Gt5HUob8aGDxOUep/scene.splinecode"
+          scene="https://prod.spline.design/Gt5HUob8aGDxOUep/scene.splinecode" // Rainbow-like scene
           style={{ width: '100%', height: '100%' }}
         />
         {/* Non-blocking visual overlays for depth; keep interactive scene clickable */}
