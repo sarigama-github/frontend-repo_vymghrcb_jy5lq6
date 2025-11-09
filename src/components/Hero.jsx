@@ -11,8 +11,8 @@ export default function Hero() {
           style={{ width: '100%', height: '100%' }}
         />
         {/* Non-blocking visual overlays for depth; keep interactive scene clickable */}
-        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(0,255,170,0.12),transparent_60%)]" />
-        <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-white via-transparent to-transparent" />
+        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(0,211,196,0.18),transparent_60%)]" />
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-white/70 via-transparent to-transparent" />
       </div>
 
       {/* Centered content overlay */}
@@ -22,7 +22,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-slate-900 drop-shadow-[0_2px_8px_rgba(255,255,255,0.35)]"
+            className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-[#00D3C4] drop-shadow-[0_2px_8px_rgba(0,211,196,0.35)]"
           >
             NeuroVault.ai
           </motion.h1>
@@ -30,7 +30,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.1 }}
-            className="mt-4 text-lg md:text-xl text-slate-700"
+            className="mt-4 text-lg md:text-xl text-[#00D3C4]"
           >
             A living grid of metallic cubes powered by intelligence. Build modern experiences that move with purpose.
           </motion.p>
@@ -41,10 +41,10 @@ export default function Hero() {
             transition={{ duration: 0.9, delay: 0.2 }}
             className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3"
           >
-            <a href="#works" className="inline-flex items-center justify-center rounded-full bg-slate-900 text-white px-6 py-3 font-semibold hover:bg-slate-800 transition-colors">
+            <a href="#works" className="inline-flex items-center justify-center rounded-full bg-[#00D3C4] text-white px-6 py-3 font-semibold hover:brightness-95 transition-colors shadow-[0_8px_30px_rgba(0,211,196,0.35)]">
               Explore Work
             </a>
-            <a href="#services" className="inline-flex items-center justify-center rounded-full bg-white text-slate-900 px-6 py-3 font-semibold border border-slate-300 hover:bg-slate-50 transition-colors">
+            <a href="#services" className="inline-flex items-center justify-center rounded-full bg-white text-slate-900 px-6 py-3 font-semibold border border-[#00D3C4]/60 hover:bg-[#00D3C4]/5 transition-colors">
               Our Services
             </a>
           </motion.div>
